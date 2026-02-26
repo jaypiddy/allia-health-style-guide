@@ -27,7 +27,7 @@ export function Navigation({ currentTheme, onThemeChange }: NavigationProps) {
             <span className="font-['Rubik'] font-bold text-xl tracking-tight hidden sm:block text-[var(--color-text-main)] font-[Nunito]">
               Allia Health Group
             </span>
-            <span className="font-['Rubik'] font-bold text-xl tracking-tight block sm:hidden text-[var(--color-text-main)] font-[Nunito]">
+            <span className="font-['Rubik'] font-bold text-xl tracking-tight sm:hidden text-[var(--color-text-main)] font-[Nunito]">
               Allia
             </span>
             <Badge variant="outline" className="hidden border-gray-200 text-gray-500 font-normal bg-gray-50 sm:inline-flex">
