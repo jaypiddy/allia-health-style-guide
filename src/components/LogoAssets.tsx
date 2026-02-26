@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Download } from 'lucide-react';
 import clsx from 'clsx';
+import { downloadFile } from '../utils/download';
 import svgPaths from '../generated/svg-up90gm7utk';
 import blackSymbolPaths from '../generated/svg-9yzw6ldkbn';
 import colorSymbolPaths from '../generated/svg-gxke2chzoc';
@@ -235,12 +236,14 @@ interface LogoCardProps {
   children: React.ReactNode;
   bgColor?: string;
   variant?: 'symbol' | 'monogram' | 'full';
+  assetName: string;
 }
 
-function LogoCard({ title, description, children, bgColor = 'white', variant = 'symbol' }: LogoCardProps) {
+function LogoCard({ title, description, children, bgColor = 'white', variant = 'symbol', assetName }: LogoCardProps) {
   const handleDownload = (format: 'svg' | 'png' | 'jpg') => {
-    console.log(`Downloading ${title} as ${format.toUpperCase()}`);
-    alert(`Download ${title} as ${format.toUpperCase()} would start here.\nIn production, this would download the actual file.`);
+    const fileName = `${assetName}.${format}`;
+    const url = `/assets/logos/${fileName}`;
+    downloadFile(url, fileName);
   };
 
   return (
@@ -252,7 +255,7 @@ function LogoCard({ title, description, children, bgColor = 'white', variant = '
       className="bg-[var(--color-component-bg)] rounded-[2rem] overflow-hidden shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_15px_40px_rgba(0,0,0,0.15)] transition-all duration-300 border border-gray-100"
     >
       {/* Logo Display Area */}
-      <div 
+      <div
         className={clsx(
           "h-48 flex items-center justify-center p-8",
           bgColor === 'dark' && 'bg-[#0f2537]',
@@ -295,13 +298,16 @@ function LogoCard({ title, description, children, bgColor = 'white', variant = '
             <Download className="w-4 h-4" />
             PNG
           </button>
-          <button
-            onClick={() => handleDownload('jpg')}
-            className="flex-1 flex items-center justify-center gap-2 bg-[#CDEF63] text-[#0f2537] px-4 py-2.5 rounded-full font-bold text-xs hover:brightness-105 transition-all active:scale-95"
-          >
-            <Download className="w-4 h-4" />
-            JPG
-          </button>
+          {/* JPG doesn't support transparency, so 'white on white' is invisible. We hide it for white logos. */}
+          {!assetName.includes('white') && !assetName.includes('wht') && (
+            <button
+              onClick={() => handleDownload('jpg')}
+              className="flex-1 flex items-center justify-center gap-2 bg-[#CDEF63] text-[#0f2537] px-4 py-2.5 rounded-full font-bold text-xs hover:brightness-105 transition-all active:scale-95"
+            >
+              <Download className="w-4 h-4" />
+              JPG
+            </button>
+          )}
         </div>
       </div>
     </motion.div>
@@ -328,14 +334,14 @@ export function LogoAssets() {
       </div>
 
       <p className="font-['PP_Neue_Montreal'] text-[#6a7282] mb-12 max-w-3xl">
-        Download the Allia Health Group logos in various formats and color variations. 
+        Download the Allia Health Group logos in various formats and color variations.
         All logos are available in SVG, PNG, and JPG formats for different use cases.
       </p>
 
       {/* Unity Symbol Section */}
       <div className="mb-16">
         <h3 className="text-sm font-normal uppercase tracking-wider text-gray-400 mb-6">Unity Symbol</h3>
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={container}
           initial="hidden"
@@ -347,6 +353,7 @@ export function LogoAssets() {
             description="Version with teal to lime gradient"
             bgColor="white"
             variant="symbol"
+            assetName="unity-symbol-color"
           >
             <UnitySymbolColor />
           </LogoCard>
@@ -356,6 +363,7 @@ export function LogoAssets() {
             description="Solid black version for light backgrounds"
             bgColor="white"
             variant="symbol"
+            assetName="unity-symbol-black"
           >
             <UnitySymbolBlack />
           </LogoCard>
@@ -365,6 +373,7 @@ export function LogoAssets() {
             description="White version for dark backgrounds"
             bgColor="dark"
             variant="symbol"
+            assetName="unity-symbol-white"
           >
             <UnitySymbolWhite />
           </LogoCard>
@@ -374,7 +383,7 @@ export function LogoAssets() {
       {/* Monogram Section */}
       <div className="mb-16">
         <h3 className="text-sm font-normal uppercase tracking-wider text-gray-400 mb-6">Symbol & AHG Monogram</h3>
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={container}
           initial="hidden"
@@ -386,6 +395,7 @@ export function LogoAssets() {
             description="Symbol with gradient and AHG letters"
             bgColor="white"
             variant="monogram"
+            assetName="monogram-color"
           >
             <MonogramColor />
           </LogoCard>
@@ -395,6 +405,7 @@ export function LogoAssets() {
             description="Symbol with AHG letters in black"
             bgColor="white"
             variant="monogram"
+            assetName="monogram-black"
           >
             <MonogramBlack />
           </LogoCard>
@@ -404,6 +415,7 @@ export function LogoAssets() {
             description="Symbol with AHG letters in white"
             bgColor="dark"
             variant="monogram"
+            assetName="monogram-white"
           >
             <MonogramWhite />
           </LogoCard>
@@ -413,7 +425,7 @@ export function LogoAssets() {
       {/* Full Logo Section */}
       <div>
         <h3 className="text-sm font-normal uppercase tracking-wider text-gray-400 mb-6">Full Allia Health Logo</h3>
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={container}
           initial="hidden"
@@ -425,6 +437,7 @@ export function LogoAssets() {
             description="Version with teal to lime gradient"
             bgColor="white"
             variant="full"
+            assetName="full-logo-color"
           >
             <FullLogoColor />
           </LogoCard>
@@ -434,6 +447,7 @@ export function LogoAssets() {
             description="Complete logo in solid black"
             bgColor="white"
             variant="full"
+            assetName="full-logo-black"
           >
             <FullLogoBlack />
           </LogoCard>
@@ -443,14 +457,35 @@ export function LogoAssets() {
             description="Complete logo in white for dark backgrounds"
             bgColor="dark"
             variant="full"
+            assetName="full-logo-white"
           >
             <FullLogoWhite />
+          </LogoCard>
+
+          <LogoCard
+            title="Full Logo - Monogram White"
+            description="Color symbol with white monogram text"
+            bgColor="dark"
+            variant="full"
+            assetName="full-logo-color-wht-monogram"
+          >
+            <img src="/assets/logos/full-logo-color-wht-monogram.svg" className="w-full h-full object-contain" alt="Full Logo Color White Monogram" />
+          </LogoCard>
+
+          <LogoCard
+            title="Full Logo - Wordmark White"
+            description="Color symbol with white wordmark text"
+            bgColor="dark"
+            variant="full"
+            assetName="full-logo-color-wht-wordmark"
+          >
+            <img src="/assets/logos/full-logo-color-wht-wordmark.svg" className="w-full h-full object-contain" alt="Full Logo Color White Wordmark" />
           </LogoCard>
         </motion.div>
       </div>
 
       {/* Usage Guidelines */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
