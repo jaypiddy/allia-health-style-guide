@@ -121,3 +121,7 @@ dist
 
 # DS_Store
 .DS_Store
+
+# Google Cloud SDK
+google-cloud-sdk/
+google-cloud-cli-darwin-arm.tar.gz

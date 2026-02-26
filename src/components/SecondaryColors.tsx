@@ -13,11 +13,11 @@ interface SecondaryColorCardProps {
   tracking?: string;
 }
 
-function SecondaryColorCard({ 
-  name, 
-  hex, 
-  usage, 
-  bgColor, 
+function SecondaryColorCard({
+  name,
+  hex,
+  usage,
+  bgColor,
   textColor,
   height,
   nameSize = '18px',
@@ -25,13 +25,13 @@ function SecondaryColorCard({
   tracking = '0'
 }: SecondaryColorCardProps) {
   return (
-    <div 
+    <div
       className={`${height} p-5 flex flex-col justify-between`}
       style={{ backgroundColor: bgColor }}
     >
       <div className="w-full">
-        <p 
-          style={{ 
+        <p
+          style={{
             fontFamily: 'PP_Neue_Montreal',
             fontWeight: 700,
             fontSize: nameSize,
@@ -45,9 +45,9 @@ function SecondaryColorCard({
       </div>
       <div className="w-full">
         <div className="mb-4">
-          <p 
-            className="uppercase mb-1" 
-            style={{ 
+          <p
+            className="uppercase mb-1"
+            style={{
               fontFamily: 'PP_Neue_Montreal',
               fontWeight: 700,
               fontSize: '12px',
@@ -58,8 +58,8 @@ function SecondaryColorCard({
           >
             USAGE
           </p>
-          <p 
-            style={{ 
+          <p
+            style={{
               fontFamily: 'PP_Neue_Montreal',
               fontWeight: 500,
               fontSize: '14px',
@@ -70,16 +70,16 @@ function SecondaryColorCard({
             {usage}
           </p>
         </div>
-        <div 
+        <div
           className="pt-4"
-          style={{ 
-            borderTop: textColor === '#FFFFFF' || textColor === 'white' 
-              ? '1px solid rgba(255, 255, 255, 0.2)' 
+          style={{
+            borderTop: textColor === '#FFFFFF' || textColor === 'white'
+              ? '1px solid rgba(255, 255, 255, 0.2)'
               : '1px solid rgba(0, 0, 0, 0.1)'
           }}
         >
-          <p 
-            style={{ 
+          <p
+            style={{
               fontFamily: 'PP_Neue_Montreal',
               fontWeight: hexSize === '24px' ? 700 : 500,
               fontSize: hexSize,
@@ -116,8 +116,8 @@ export function SecondaryColors() {
   return (
     <div className="space-y-8 mt-16">
       {/* Secondary Color Section Header */}
-      <h3 
-        style={{ 
+      <h3
+        style={{
           fontFamily: 'PP_Neue_Montreal',
           fontWeight: 700,
           fontSize: '20px',
@@ -127,18 +127,23 @@ export function SecondaryColors() {
       >
         Secondary Color
       </h3>
-      
-      {/* Color Cards Grid */}
-      <motion.div 
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-0 rounded-[32px] overflow-hidden shadow-sm"
+
+      {/* Color Cards Grid - Mobile Horizontal Scroll / Desktop Grid */}
+      <motion.div
+        className="
+          /* Mobile: Horizontal Scroll */
+          flex overflow-x-auto gap-4 pb-8 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory
+          /* Desktop: Grid */
+          lg:grid lg:grid-cols-6 lg:gap-0 lg:pb-0 lg:mx-0 lg:px-0 lg:rounded-[32px] lg:overflow-hidden lg:shadow-sm
+        "
         variants={container}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-50px" }}
       >
-        {/* Column 1: Oxygenated Mist - Tall card */}
-        <motion.div variants={item} className="w-full flex justify-center">
-          <div className="w-[120%]">
+        {/* Column 1: Oxygenated Mist */}
+        <motion.div variants={item} className="flex-none w-[85vw] lg:w-full flex justify-center snap-center lg:snap-align-none">
+          <div className="w-full lg:w-[120%]"> {/* Keep 120% only for Desktop overlapping effect if needed, but constrain on mobile */}
             <SecondaryColorCard
               name="Oxygenated Mist"
               hex="#F4F8FA"
@@ -150,10 +155,9 @@ export function SecondaryColors() {
           </div>
         </motion.div>
 
-        {/* Column 2: Laser Scalpel Teal with stacked cards */}
-        <motion.div variants={item} className="w-full h-[400px] lg:h-[878px] flex flex-col justify-center">
-          <div className="w-[120%]">
-            {/* Laser Scalpel Teal - takes up remaining space */}
+        {/* Column 2: Laser Scalpel Teal */}
+        <motion.div variants={item} className="flex-none w-[85vw] lg:w-full h-[400px] lg:h-[878px] flex flex-col justify-center snap-center lg:snap-align-none">
+          <div className="w-full lg:w-[120%] h-full flex flex-col">
             <div className="flex-1">
               <SecondaryColorCard
                 name="Laser Scalpel Teal"
@@ -166,28 +170,25 @@ export function SecondaryColors() {
                 tracking="-0.45px"
               />
             </div>
-            
-            {/* Bottom two stacked cards */}
+
             <div className="flex h-[224px]">
-              {/* Saline Solution */}
               <div className="flex-1">
                 <SecondaryColorCard
                   name="Saline Solution"
                   hex="#D0F5F0"
-                  usage="Secondary background to highlight specific sections."
+                  usage="Highlight sections."
                   bgColor="#D0F5F0"
                   textColor="#1e2939"
                   height="h-full"
                   nameSize="16px"
                 />
               </div>
-              
-              {/* Deep Scrub Navy */}
+
               <div className="flex-1">
                 <SecondaryColorCard
                   name="Deep Scrub Navy"
                   hex="#0F2537"
-                  usage="Hero section and footer"
+                  usage="Hero and footer"
                   bgColor="#0F2537"
                   textColor="#FFFFFF"
                   height="h-full"
@@ -198,9 +199,9 @@ export function SecondaryColors() {
           </div>
         </motion.div>
 
-        {/* Column 3: Vitamin C Burst - Tall card */}
-        <motion.div variants={item} className="w-full flex justify-center">
-          <div className="w-[80%]">
+        {/* Column 3: Vitamin C Burst */}
+        <motion.div variants={item} className="flex-none w-[85vw] lg:w-full flex justify-center snap-center lg:snap-align-none">
+          <div className="w-full lg:w-[80%]">
             <SecondaryColorCard
               name="Vitamin C Burst"
               hex="#FF9F29"
@@ -213,13 +214,13 @@ export function SecondaryColors() {
           </div>
         </motion.div>
 
-        {/* Column 4: Epidermal Glow - Tall card */}
-        <motion.div variants={item} className="w-full flex justify-center">
-          <div className="w-[80%]">
+        {/* Column 4: Epidermal Glow */}
+        <motion.div variants={item} className="flex-none w-[85vw] lg:w-full flex justify-center snap-center lg:snap-align-none">
+          <div className="w-full lg:w-[80%]">
             <SecondaryColorCard
               name="Epidermal Glow"
               hex="#FFE8D1"
-              usage="Secondary background to highlight specific sections"
+              usage="Highlight sections"
               bgColor="#FFE8D1"
               textColor="#1e2939"
               height="h-[400px] lg:h-[878px]"
@@ -227,9 +228,9 @@ export function SecondaryColors() {
           </div>
         </motion.div>
 
-        {/* Column 5: Bio-Lumen Lime - Tall card */}
-        <motion.div variants={item} className="w-full flex justify-center">
-          <div className="w-[80%]">
+        {/* Column 5: Bio-Lumen Lime */}
+        <motion.div variants={item} className="flex-none w-[85vw] lg:w-full flex justify-center snap-center lg:snap-align-none">
+          <div className="w-full lg:w-[80%]">
             <SecondaryColorCard
               name="Bio-Lumen Lime"
               hex="#CDEF63"
@@ -242,13 +243,13 @@ export function SecondaryColors() {
           </div>
         </motion.div>
 
-        {/* Column 6: Aloe Vera Soothe - Tall card */}
-        <motion.div variants={item} className="w-full flex justify-center">
-          <div className="w-[80%]">
+        {/* Column 6: Aloe Vera Soothe */}
+        <motion.div variants={item} className="flex-none w-[85vw] lg:w-full flex justify-center snap-center lg:snap-align-none">
+          <div className="w-full lg:w-[80%]">
             <SecondaryColorCard
               name="Aloe Vera Soothe"
               hex="#E8F5D6"
-              usage="Secondary background to highlight specific sections"
+              usage="Highlight sections"
               bgColor="#E8F5D6"
               textColor="#1e2939"
               height="h-[400px] lg:h-[878px]"
@@ -256,6 +257,11 @@ export function SecondaryColors() {
           </div>
         </motion.div>
       </motion.div>
+
+      {/* Mobile Scroll Hint */}
+      <div className="lg:hidden text-center -mt-4 text-xs text-gray-400 font-medium animate-pulse">
+        ← Swipe to view all colors →
+      </div>
     </div>
   );
 }

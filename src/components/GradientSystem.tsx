@@ -16,13 +16,22 @@ export function GradientSystem() {
 
   return (
     <section id="gradients" className="scroll-mt-24">
-      <motion.div 
+      <motion.div
         variants={container}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, margin: "-50px" }}
+        className="w-full"
       >
-        <GradientSystemImport />
+        <div className="w-full overflow-x-auto pb-4 -mx-4 px-4 md:overflow-visible md:pb-0 md:mx-0 md:px-0 scrollbar-hide">
+          <div className="min-w-[1024px] md:min-w-0">
+            <GradientSystemImport />
+          </div>
+        </div>
+        {/* Mobile Scroll Hint */}
+        <div className="md:hidden text-center mt-2 text-xs text-gray-400 font-medium animate-pulse">
+          ← Scroll to view full gradients →
+        </div>
       </motion.div>
     </section>
   );
