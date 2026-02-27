@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { toast } from 'sonner';
 
 interface SecondaryColorCardProps {
   name: string;
@@ -24,13 +25,20 @@ function SecondaryColorCard({
   hexSize = '18px',
   tracking = '0'
 }: SecondaryColorCardProps) {
+  const handleCopy = () => {
+    navigator.clipboard.writeText(hex);
+    toast.success(`Copied ${name} (${hex}) to clipboard!`);
+  };
+
   return (
     <div
-      className={`${height} p-5 flex flex-col justify-between`}
+      onClick={handleCopy}
+      className={`group ${height} p-5 flex flex-col justify-between cursor-pointer transition-transform hover:scale-[1.02] active:scale-95 duration-200`}
       style={{ backgroundColor: bgColor }}
     >
       <div className="w-full">
         <p
+          className="group-hover:opacity-80 transition-opacity"
           style={{
             fontFamily: 'PP_Neue_Montreal',
             fontWeight: 700,
@@ -44,7 +52,7 @@ function SecondaryColorCard({
         </p>
       </div>
       <div className="w-full">
-        <div className="mb-4">
+        <div className="mb-4 group-hover:-translate-y-1 transition-transform duration-300">
           <p
             className="uppercase mb-1"
             style={{
@@ -71,7 +79,7 @@ function SecondaryColorCard({
           </p>
         </div>
         <div
-          className="pt-4"
+          className="pt-4 group-hover:bg-black/5"
           style={{
             borderTop: textColor === '#FFFFFF' || textColor === 'white'
               ? '1px solid rgba(255, 255, 255, 0.2)'
