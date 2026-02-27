@@ -24,11 +24,8 @@ export function Navigation({ currentTheme, onThemeChange }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center gap-3">
-            <span className="font-['Rubik'] font-bold text-xl tracking-tight hidden sm:block text-[var(--color-text-main)] font-[Nunito]">
+            <span className="font-bold text-xl tracking-tight text-[var(--color-text-main)] font-[Nunito]">
               Allia Health Group
-            </span>
-            <span className="font-['Rubik'] font-bold text-xl tracking-tight block sm:hidden text-[var(--color-text-main)] font-[Nunito]">
-              Allia
             </span>
             <Badge variant="outline" className="hidden border-gray-200 text-gray-500 font-normal bg-gray-50 sm:inline-flex">
               Style Guide v2.0
