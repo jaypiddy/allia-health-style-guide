@@ -688,13 +688,13 @@ function Colors10() {
 
 function Frame2() {
   return (
-    <div className="content-stretch flex items-center overflow-clip relative rounded-[32px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)] shrink-0 w-[1217px]">
-      <Colors />
-      <Frame1 />
-      <Container16 />
-      <Colors7 />
-      <Container22 />
-      <Colors10 />
+    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-0 overflow-clip relative rounded-[32px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)] w-full">
+      <Colors className="h-full w-full" />
+      <Frame1 className="h-full w-full col-span-1 md:col-span-2" />
+      <Container16 className="h-full w-full" />
+      <Colors7 className="h-full w-full" />
+      <Container22 className="h-full w-full" />
+      <Colors10 className="h-full w-full" />
     </div>
   );
 }
@@ -744,18 +744,20 @@ function Container26() {
 
 function Text24() {
   return (
-    <div className="content-stretch flex h-[20.5px] items-start relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#F4F8FA</p>
+    <div className="h-[32px] relative shrink-0 w-[96.945px]" data-name="Text">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[32px] relative w-[96.945px]">
+        <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[32px] left-0 not-italic text-[#1e2939] text-[24px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#F4F8FA</p>
+      </div>
     </div>
   );
 }
 
 function Container27() {
   return (
-    <div className="h-[45px] relative shrink-0 w-full" data-name="Container">
+    <div className="h-[49px] relative shrink-0 w-full" data-name="Container">
       <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none" />
-      <div className="size-full">
-        <div className="content-stretch flex flex-col h-[45px] items-start pb-0 pl-0 pr-[170.141px] pt-[20.5px] relative w-full">
+      <div className="flex flex-row items-end size-full">
+        <div className="content-stretch flex h-[49px] items-end justify-between pb-0 pl-0 pr-[149.055px] pt-px relative w-full">
           <Text24 />
         </div>
       </div>
@@ -765,8 +767,8 @@ function Container27() {
 
 function Container28() {
   return (
-    <div className="relative shrink-0 w-full" data-name="Container">
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[16px] items-start relative w-full">
+    <div className="relative shrink-0 w-full grow flex flex-col justify-end" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[16px] items-start relative w-full pt-[16px]">
         <Container26 />
         <Container27 />
       </div>
@@ -826,7 +828,7 @@ function Text26() {
   return (
     <div className="h-[32px] relative shrink-0 w-[96.945px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[32px] relative w-[96.945px]">
-        <p className="absolute font-['Inter:Bold',sans-serif] font-bold leading-[32px] left-0 not-italic text-[#0f2537] text-[24px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#21E6C1</p>
+        <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[32px] left-0 not-italic text-[#0f2537] text-[24px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#21E6C1</p>
       </div>
     </div>
   );
@@ -847,8 +849,8 @@ function Container30() {
 
 function Colors13() {
   return (
-    <div className="relative shrink-0 w-full" data-name="Colors">
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[16px] items-start relative w-full">
+    <div className="relative shrink-0 w-full grow flex flex-col justify-end" data-name="Colors">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[16px] items-start relative w-full pt-[16px]">
         <Container29 />
         <Container30 />
       </div>
@@ -890,7 +892,7 @@ function Text28() {
 function Paragraph10() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background specific sections.</p>
+      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background for specific sections.</p>
     </div>
   );
 }
@@ -906,18 +908,20 @@ function Container32() {
 
 function Text29() {
   return (
-    <div className="content-stretch flex h-[20.5px] items-start relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#D0F5F0</p>
+    <div className="h-[32px] relative shrink-0 w-[96.945px]" data-name="Text">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[32px] relative w-[96.945px]">
+        <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[32px] left-0 not-italic text-[#1e2939] text-[24px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#D0F5F0</p>
+      </div>
     </div>
   );
 }
 
 function Container33() {
   return (
-    <div className="h-[45px] relative shrink-0 w-full" data-name="Container">
+    <div className="h-[49px] relative shrink-0 w-full" data-name="Container">
       <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none" />
-      <div className="size-full">
-        <div className="content-stretch flex flex-col h-[45px] items-start pb-0 pl-0 pr-[170.141px] pt-[20.5px] relative w-full">
+      <div className="flex flex-row items-end size-full">
+        <div className="content-stretch flex h-[49px] items-end justify-between pb-0 pl-0 pr-[149.055px] pt-px relative w-full">
           <Text29 />
         </div>
       </div>
@@ -927,8 +931,8 @@ function Container33() {
 
 function Container34() {
   return (
-    <div className="relative shrink-0 w-full" data-name="Container">
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[16px] items-start relative w-full">
+    <div className="relative shrink-0 w-full grow flex flex-col justify-end" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[16px] items-start relative w-full pt-[16px]">
         <Container32 />
         <Container33 />
       </div>
@@ -977,7 +981,7 @@ function Paragraph11() {
 
 function Container35() {
   return (
-    <div className="content-stretch flex flex-col gap-[4px] h-[37.5px] items-start relative shrink-0 w-full" data-name="Container">
+    <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0 w-full" data-name="Container">
       <Text31 />
       <Paragraph11 />
     </div>
@@ -996,7 +1000,7 @@ function Text32() {
 
 function Container36() {
   return (
-    <div className="content-stretch flex flex-col h-[45px] items-start pb-0 pt-[17px] px-0 relative shrink-0 w-full" data-name="Container">
+    <div className="content-stretch flex flex-col h-[49px] items-start pb-0 pt-[17px] px-0 relative shrink-0 w-full" data-name="Container">
       <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(255,255,255,0.2)] border-solid inset-0 pointer-events-none" />
       <Text32 />
     </div>
@@ -1005,8 +1009,8 @@ function Container36() {
 
 function Container37() {
   return (
-    <div className="h-[98.5px] relative shrink-0 w-full" data-name="Container">
-      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[16px] h-[98.5px] items-start relative w-full">
+    <div className="relative shrink-0 w-full grow flex flex-col justify-end" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[16px] items-start relative w-full pt-[16px]">
         <Container35 />
         <Container36 />
       </div>
@@ -1029,11 +1033,19 @@ function Colors15() {
 
 function PrimaryColors() {
   return (
-    <div className="content-stretch flex items-center overflow-clip relative rounded-[32px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)] shrink-0 w-full" data-name="Primary Colors">
+    <div
+      className="grid gap-0 h-auto overflow-clip relative rounded-[32px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)] w-full"
+      style={{ gridTemplateColumns: 'repeat(8, minmax(0, 1fr))' }}
+      data-name="Primary Colors"
+    >
       <Colors11 />
+      <Colors15 />
       <Container31 />
       <Colors14 />
-      <Colors15 />
+      <Container46 />
+      <Colors21 />
+      <Container40 />
+      <Colors18 />
     </div>
   );
 }
@@ -1076,7 +1088,7 @@ function Text33() {
 function Paragraph12() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#422016] text-[14px]">Secondary buttons and icons</p>
+      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#422016] text-[14px]">Tertiary buttons, icons and horizontal rules</p>
     </div>
   );
 }
@@ -1158,7 +1170,7 @@ function Text36() {
 function Paragraph13() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background specific sections</p>
+      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Tertiary background for specific sections</p>
     </div>
   );
 }
@@ -1174,18 +1186,20 @@ function Container41() {
 
 function Text37() {
   return (
-    <div className="content-stretch flex h-[20.5px] items-start relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#FFE8D1</p>
+    <div className="h-[32px] relative shrink-0 w-[96.945px]" data-name="Text">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[32px] relative w-[96.945px]">
+        <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[32px] left-0 not-italic text-[#1e2939] text-[24px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#FFE8D1</p>
+      </div>
     </div>
   );
 }
 
 function Container42() {
   return (
-    <div className="h-[45px] relative shrink-0 w-full" data-name="Container">
+    <div className="h-[49px] relative shrink-0 w-full" data-name="Container">
       <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none" />
-      <div className="size-full">
-        <div className="content-stretch flex flex-col h-[45px] items-start pb-0 pl-0 pr-[170.141px] pt-[20.5px] relative w-full">
+      <div className="flex flex-row items-end size-full">
+        <div className="content-stretch flex h-[49px] items-end justify-between pb-0 pl-0 pr-[149.055px] pt-px relative w-full">
           <Text37 />
         </div>
       </div>
@@ -1320,7 +1334,7 @@ function Text41() {
 function Paragraph15() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background specific sections</p>
+      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background for specific sections</p>
     </div>
   );
 }
@@ -1336,18 +1350,20 @@ function Container47() {
 
 function Text42() {
   return (
-    <div className="content-stretch flex h-[20.5px] items-start relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#E8F5D6</p>
+    <div className="h-[32px] relative shrink-0 w-[96.945px]" data-name="Text">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[32px] relative w-[96.945px]">
+        <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[32px] left-0 not-italic text-[#1e2939] text-[24px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#E8F5D6</p>
+      </div>
     </div>
   );
 }
 
 function Container48() {
   return (
-    <div className="h-[45px] relative shrink-0 w-full" data-name="Container">
+    <div className="h-[49px] relative shrink-0 w-full" data-name="Container">
       <div aria-hidden="true" className="absolute border-[1px_0px_0px] border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none" />
-      <div className="size-full">
-        <div className="content-stretch flex flex-col h-[45px] items-start pb-0 pl-0 pr-[170.141px] pt-[20.5px] relative w-full">
+      <div className="flex flex-row items-end size-full">
+        <div className="content-stretch flex h-[49px] items-end justify-between pb-0 pl-0 pr-[149.055px] pt-px relative w-full">
           <Text42 />
         </div>
       </div>
@@ -1381,11 +1397,11 @@ function Colors21() {
 
 function SecondaryColors() {
   return (
-    <div className="content-stretch flex h-[400px] items-center overflow-clip relative rounded-[32px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)] shrink-0 w-full" data-name="Secondary Colors">
-      <Container40 />
-      <Colors18 />
-      <Container46 />
-      <Colors21 />
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 h-auto overflow-clip relative rounded-[32px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.05)] w-full" data-name="Secondary Colors">
+      <Container40 className="h-full w-full" />
+      <Colors18 className="h-full w-full" />
+      <Container46 className="h-full w-full" />
+      <Colors21 className="h-full w-full" />
     </div>
   );
 }
@@ -1403,9 +1419,7 @@ export default function Colors22() {
   return (
     <div className="content-stretch flex flex-col gap-[56px] items-start relative size-full" data-name="Colors">
       <Frame5 />
-      <Frame2 />
       <Frame4 />
-      <Frame3 />
     </div>
   );
 }
