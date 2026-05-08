@@ -9,7 +9,7 @@ function Container1() {
 function Text() {
   return (
     <div className="absolute bg-[rgba(255,232,209,0.1)] border border-[#ff9f29] border-solid h-[26px] left-0 rounded-[1.67772e+07px] top-[0.5px] w-[167.922px]" data-name="Text">
-      <p className="absolute font-['Inter:Bold',sans-serif] font-bold leading-[16px] left-[12px] not-italic text-[#ff9f29] text-[12px] text-nowrap top-[4.5px] tracking-[0.6px] uppercase whitespace-pre">Allia Health Group</p>
+      <p className="absolute font-bold font-sans font-bold leading-[16px] left-[12px] not-italic text-[#ff9f29] text-[12px] text-nowrap top-[4.5px] tracking-[0.6px] uppercase whitespace-pre">Allia Health Group</p>
     </div>
   );
 }
@@ -45,7 +45,7 @@ function Hero1() {
   return (
     <div className="h-[46px] relative rounded-[1.67772e+07px] shrink-0" data-name="Hero">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex h-[46px] items-center px-[24px] py-[12px] relative">
-        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-center text-nowrap whitespace-pre">Primary</p>
+        <p className="font-bold font-sans font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-center text-nowrap whitespace-pre">Primary</p>
       </div>
     </div>
   );
@@ -55,7 +55,7 @@ function Hero2() {
   return (
     <div className="h-[46px] relative rounded-[1.67772e+07px] shrink-0" data-name="Hero">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex h-[46px] items-center px-[24px] py-[12px] relative">
-        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-center text-nowrap whitespace-pre">Secondary</p>
+        <p className="font-bold font-sans font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-center text-nowrap whitespace-pre">Secondary</p>
       </div>
     </div>
   );
@@ -66,7 +66,7 @@ function Button() {
     <div className="h-[42px] relative rounded-[1.67772e+07px] shrink-0 w-[99.32px]" data-name="Button">
       <div aria-hidden="true" className="absolute border border-[#cdef63] border-solid inset-0 pointer-events-none rounded-[1.67772e+07px]" />
       <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[42px] relative w-[99.32px]">
-        <p className="absolute font-['Inter:Bold',sans-serif] font-bold leading-[20px] left-[50px] not-italic text-[#cdef63] text-[14px] text-center text-nowrap top-[11.5px] translate-x-[-50%] whitespace-pre">Outline</p>
+        <p className="absolute font-bold font-sans font-bold leading-[20px] left-[50px] not-italic text-[#cdef63] text-[14px] text-center text-nowrap top-[11.5px] translate-x-[-50%] whitespace-pre">Outline</p>
       </div>
     </div>
   );

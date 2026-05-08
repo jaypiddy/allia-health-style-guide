@@ -94,7 +94,13 @@
 
   :root,
   :host {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-museum: 'PP Museum', sans-serif;
+    --font-montreal: 'PP Neue Montreal', sans-serif;
+    --font-nunito: 'Nunito', sans-serif;
+    --font-rubik: 'Rubik', sans-serif;
+    --font-heading: var(--font-museum);
+    --font-body: var(--font-montreal);
+    --font-sans: var(--font-montreal);
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --color-gray-50: oklch(.985 .002 247.839);
     --color-gray-100: oklch(.967 .003 264.542);
@@ -522,6 +528,18 @@
 }
 
 @layer utilities {
+  .font-museum {
+    font-family: var(--font-museum);
+  }
+  .font-montreal {
+    font-family: var(--font-montreal);
+  }
+  .font-nunito {
+    font-family: var(--font-nunito);
+  }
+  .font-rubik {
+    font-family: var(--font-rubik);
+  }
   .pointer-events-none {
     pointer-events: none;
   }
@@ -1669,53 +1687,6 @@
     text-align: center;
   }
 
-  .font-\[\'Inter\:Bold\'\,\'PP_Neue_Montreal\'\] {
-    font-family: Inter\:Bold, PP Neue Montreal;
-  }
-
-  .font-\[\'Inter\:Bold\'\,sans-serif\] {
-    font-family: Inter\:Bold, sans-serif;
-  }
-
-  .font-\[\'Inter\:Medium\'\,sans-serif\] {
-    font-family: Inter\:Medium, sans-serif;
-  }
-
-  .font-\[\'Monaco\:Regular\'\,sans-serif\] {
-    font-family: Monaco\:Regular, sans-serif;
-  }
-
-  .font-\[\'Nunito\'\] {
-    font-family: Nunito;
-  }
-
-  .font-\[\'PP_Museum\'\,sans-serif\] {
-    font-family: PP Museum, sans-serif;
-  }
-
-  .font-\[\'PP_Museum\'\] {
-    font-family: PP Museum;
-  }
-
-  .font-\[\'PP_Neue_Montreal\'\] {
-    font-family: PP Neue Montreal;
-  }
-
-  .font-\[\'Rubik\'\] {
-    font-family: Rubik;
-  }
-
-  .font-\[Nunito\] {
-    font-family: Nunito;
-  }
-
-  .font-\[PP_Museum\] {
-    font-family: PP Museum;
-  }
-
-  .font-\[Rubik\] {
-    font-family: Rubik;
-  }
 
   .font-mono {
     font-family: var(--font-mono);

@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
         {/* Designed By */}
         <div className="flex items-center gap-2 order-2 md:order-1">
-          <span className="text-white text-xs font-[Nunito] uppercase tracking-wider">Designed by:</span>
+          <span className="text-white text-xs font-nunito uppercase tracking-wider">Designed by:</span>
           <a
             href="https://powershifter.com"
             target="_blank"
@@ -21,7 +21,7 @@ export function Footer() {
           </a>
         </div>
 
-        <p className="text-white text-sm font-[Nunito] order-1 md:order-2">© {new Date().getFullYear()} - Allia Health Group.</p>
+        <p className="text-white text-sm font-nunito order-1 md:order-2">© {new Date().getFullYear()} - Allia Health Group.</p>
       </div>
     </footer>
   );

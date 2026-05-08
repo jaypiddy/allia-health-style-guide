@@ -2,7 +2,7 @@ function GradientSystem() {
   return (
     <div className="bg-[rgba(255,255,255,0.2)] relative rounded-[1.67772e+07px] shrink-0" data-name="GradientSystem">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[12px] py-[4px] relative">
-        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] text-nowrap tracking-[0.6px] uppercase whitespace-pre">Secondary Gradient</p>
+        <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] text-nowrap tracking-[0.6px] uppercase whitespace-pre">Secondary Gradient</p>
       </div>
     </div>
   );

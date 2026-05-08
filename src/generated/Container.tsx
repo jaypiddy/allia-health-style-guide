@@ -5,7 +5,7 @@ import imgImageJoyfulDiversePeople from "figma:asset/d936a78e5b689123a98ab4e679b
 function Heading() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Heading 3">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[20px] not-italic relative shrink-0 text-[#99a1af] text-[14px] text-nowrap tracking-[0.7px] uppercase whitespace-pre">Card Layouts</p>
+      <p className="font-bold font-sans font-bold leading-[20px] not-italic relative shrink-0 text-[#99a1af] text-[14px] text-nowrap tracking-[0.7px] uppercase whitespace-pre">Card Layouts</p>
     </div>
   );
 }
@@ -26,7 +26,7 @@ function Text() {
   return (
     <div className="bg-[#21e6c1] relative rounded-[1.67772e+07px] shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[8px] py-[2px] relative">
-        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[10px] text-nowrap whitespace-pre">NEW</p>
+        <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[10px] text-nowrap whitespace-pre">NEW</p>
       </div>
     </div>
   );
@@ -36,7 +36,7 @@ function Text1() {
   return (
     <div className="relative shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative">
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[16px] not-italic relative shrink-0 text-[12px] text-[rgba(255,255,255,0.8)] text-nowrap whitespace-pre">5 mins ago</p>
+        <p className="font-medium font-sans font-medium leading-[16px] not-italic relative shrink-0 text-[12px] text-[rgba(255,255,255,0.8)] text-nowrap whitespace-pre">5 mins ago</p>
       </div>
     </div>
   );
@@ -54,7 +54,7 @@ function Container() {
 function Heading1() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Heading 4">
-      <p className="font-['Nunito:Bold',sans-serif] font-bold leading-[28px] relative shrink-0 text-[20px] text-nowrap text-white whitespace-pre">Misty Forests</p>
+      <p className="font-bold font-nunito font-bold leading-[28px] relative shrink-0 text-[20px] text-nowrap text-white whitespace-pre">Misty Forests</p>
     </div>
   );
 }
@@ -110,7 +110,7 @@ function Interactive3() {
 function Text2() {
   return (
     <div className="bg-[#0f2537] content-stretch flex items-center justify-center px-[8px] py-[2px] relative rounded-[1.67772e+07px] shrink-0" data-name="Text">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#ff9f29] text-[10px] text-nowrap uppercase whitespace-pre">Nature</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#ff9f29] text-[10px] text-nowrap uppercase whitespace-pre">Nature</p>
     </div>
   );
 }
@@ -118,7 +118,7 @@ function Text2() {
 function Heading2() {
   return (
     <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Heading 4">
-      <p className="font-['Nunito:Bold',sans-serif] font-bold leading-[28px] relative shrink-0 text-[#101828] text-[20px] text-nowrap whitespace-pre">Highland Peaks</p>
+      <p className="font-bold font-nunito font-bold leading-[28px] relative shrink-0 text-[#101828] text-[20px] text-nowrap whitespace-pre">Highland Peaks</p>
     </div>
   );
 }
@@ -147,7 +147,7 @@ function Icon() {
 function Link() {
   return (
     <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-name="Link">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-nowrap whitespace-pre">Read More</p>
+      <p className="font-bold font-sans font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-nowrap whitespace-pre">Read More</p>
       <Icon />
     </div>
   );
@@ -186,7 +186,7 @@ function Text3() {
   return (
     <div className="content-stretch flex items-center justify-center px-[8px] py-[2px] relative rounded-[1.67772e+07px] shrink-0" data-name="Text">
       <div aria-hidden="true" className="absolute border border-[#cdef63] border-solid inset-0 pointer-events-none rounded-[1.67772e+07px]" />
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#cdef63] text-[10px] text-nowrap uppercase whitespace-pre">Info</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#cdef63] text-[10px] text-nowrap uppercase whitespace-pre">Info</p>
     </div>
   );
 }
@@ -194,7 +194,7 @@ function Text3() {
 function Heading3() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Heading 4">
-      <p className="font-['Nunito:Bold',sans-serif] font-bold leading-[28px] relative shrink-0 text-[20px] text-nowrap text-white whitespace-pre">Standard Plan</p>
+      <p className="font-bold font-nunito font-bold leading-[28px] relative shrink-0 text-[20px] text-nowrap text-white whitespace-pre">Standard Plan</p>
     </div>
   );
 }
@@ -224,7 +224,7 @@ function Button() {
     <div className="bg-gradient-to-b from-[#cdef63] from-[134.79%] relative rounded-[1.67772e+07px] shrink-0 to-[#e8f5d6] w-full" data-name="Button">
       <div className="flex flex-row items-center justify-center size-full">
         <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[21px] py-[10px] relative w-full">
-          <p className="font-['Inter:Bold',sans-serif] font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-center text-nowrap whitespace-pre">Get Started</p>
+          <p className="font-bold font-sans font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-center text-nowrap whitespace-pre">Get Started</p>
         </div>
       </div>
     </div>
@@ -248,7 +248,7 @@ function Text4() {
   return (
     <div className="content-stretch flex items-center justify-center px-[8px] py-[2px] relative rounded-[1.67772e+07px] shrink-0" data-name="Text">
       <div aria-hidden="true" className="absolute border border-[#ff9f29] border-solid inset-0 pointer-events-none rounded-[1.67772e+07px]" />
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[15px] not-italic relative shrink-0 text-[#ff9f29] text-[10px] text-nowrap uppercase whitespace-pre">Info</p>
+      <p className="font-bold font-sans font-bold leading-[15px] not-italic relative shrink-0 text-[#ff9f29] text-[10px] text-nowrap uppercase whitespace-pre">Info</p>
     </div>
   );
 }
@@ -256,7 +256,7 @@ function Text4() {
 function Heading4() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Heading 4">
-      <p className="font-['Nunito:Bold',sans-serif] font-bold leading-[28px] relative shrink-0 text-[#0f2537] text-[20px] text-nowrap whitespace-pre">Standard Plan</p>
+      <p className="font-bold font-nunito font-bold leading-[28px] relative shrink-0 text-[#0f2537] text-[20px] text-nowrap whitespace-pre">Standard Plan</p>
     </div>
   );
 }
@@ -286,7 +286,7 @@ function Button1() {
     <div className="relative rounded-[1.67772e+07px] shrink-0 w-full" data-name="Button">
       <div className="flex flex-row items-center justify-center size-full">
         <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[21px] py-[10px] relative w-full">
-          <p className="font-['Inter:Bold',sans-serif] font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-center text-nowrap whitespace-pre">Get Started</p>
+          <p className="font-bold font-sans font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px] text-center text-nowrap whitespace-pre">Get Started</p>
         </div>
       </div>
     </div>

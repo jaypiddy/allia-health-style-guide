@@ -276,10 +276,10 @@ function LogoCard({ title, description, children, bgColor = 'white', variant = '
       {/* Info & Actions */}
       <div className="p-6 space-y-4">
         <div>
-          <h4 className="font-['PP_Museum'] font-normal text-lg mb-1 text-[var(--color-text-main)]">
+          <h4 className="font-museum font-normal text-lg mb-1 text-[var(--color-text-main)]">
             {title}
           </h4>
-          <p className="font-['PP_Neue_Montreal'] text-sm text-[#6a7282]">{description}</p>
+          <p className="font-montreal text-sm text-[#6a7282]">{description}</p>
         </div>
 
         {/* Download Buttons */}
@@ -329,11 +329,11 @@ export function LogoAssets() {
     <section id="logos" className="scroll-mt-24">
       <div className="flex items-center gap-4 mb-8">
         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-gradient-to)] text-[var(--color-secondary)] font-bold text-sm">04</span>
-        <h2 className="text-3xl font-['PP_Museum'] font-normal text-[var(--color-text-main)]">Logo Assets</h2>
+        <h2 className="text-3xl font-museum font-normal text-[var(--color-text-main)]">Logo Assets</h2>
         <div className="h-px bg-gray-200 flex-1 ml-4"></div>
       </div>
 
-      <p className="font-['PP_Neue_Montreal'] text-[#6a7282] mb-12 max-w-3xl">
+      <p className="font-montreal text-[#6a7282] mb-12 max-w-3xl">
         Download the Allia Health Group logos in various formats and color variations.
         All logos are available in SVG, PNG, and JPG formats for different use cases.
       </p>
@@ -492,10 +492,10 @@ export function LogoAssets() {
         transition={{ delay: 0.3 }}
         className="mt-12 rounded-[2rem] p-8 border border-gray-100"
       >
-        <h3 className="font-['PP_Museum'] font-normal text-xl mb-4 text-[var(--color-text-main)]">
+        <h3 className="font-museum font-normal text-xl mb-4 text-[var(--color-text-main)]">
           Usage Guidelines
         </h3>
-        <div className="font-['PP_Neue_Montreal'] grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-[#6a7282]">
+        <div className="font-montreal grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-[#6a7282]">
           <div>
             <h4 className="font-bold text-[var(--color-text-main)] mb-2">When to use each version:</h4>
             <ul className="space-y-2 list-disc list-inside">

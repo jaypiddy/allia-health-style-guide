@@ -2,7 +2,7 @@ function Text() {
   return (
     <div className="bg-[#21e6c1] relative rounded-[16777200px] shrink-0 size-[32px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative size-full">
-        <p className="css-ew64yg font-['Inter:Bold',sans-serif] font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px]">02</p>
+        <p className="css-ew64yg font-bold font-sans font-bold leading-[20px] not-italic relative shrink-0 text-[#0f2537] text-[14px]">02</p>
       </div>
     </div>
   );
@@ -12,7 +12,7 @@ function Heading() {
   return (
     <div className="relative shrink-0" data-name="Heading 2">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative">
-        <p className="css-ew64yg font-['PP_Museum',sans-serif] font-normal leading-[36px] relative shrink-0 text-[#101828] text-[30px]">Gradient System</p>
+        <p className="css-ew64yg font-museum font-normal leading-[36px] relative shrink-0 text-[#101828] text-[30px]">Gradient System</p>
       </div>
     </div>
   );
@@ -36,7 +36,7 @@ function GradientSystem() {
   return (
     <div className="bg-[rgba(255,255,255,0.2)] relative rounded-[16777200px] shrink-0" data-name="GradientSystem">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[12px] py-[4px] relative">
-        <p className="css-ew64yg font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] tracking-[0.6px] uppercase">Primary Gradient</p>
+        <p className="css-ew64yg font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] tracking-[0.6px] uppercase">Primary Gradient</p>
       </div>
     </div>
   );
@@ -54,7 +54,7 @@ function GradientSystem1() {
   return (
     <div className="bg-[rgba(255,255,255,0.2)] relative rounded-[16777200px] shrink-0" data-name="GradientSystem">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[12px] py-[4px] relative">
-        <p className="css-ew64yg font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] tracking-[0.6px] uppercase">Secondary Gradient</p>
+        <p className="css-ew64yg font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] tracking-[0.6px] uppercase">Secondary Gradient</p>
       </div>
     </div>
   );
@@ -72,7 +72,7 @@ function GradientSystem2() {
   return (
     <div className="bg-[rgba(255,255,255,0.2)] relative rounded-[16777200px] shrink-0" data-name="GradientSystem">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center px-[12px] py-[4px] relative">
-        <p className="css-ew64yg font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] tracking-[0.6px] uppercase">Tertiary Gradient</p>
+        <p className="css-ew64yg font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] tracking-[0.6px] uppercase">Tertiary Gradient</p>
       </div>
     </div>
   );

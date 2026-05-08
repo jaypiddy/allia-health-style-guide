@@ -33,7 +33,7 @@ export function Interactive() {
     <section id="components" className="scroll-mt-24">
       <div className="flex items-center gap-4 mb-8">
         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[var(--color-primary)] text-[var(--color-secondary)] font-bold text-sm">03</span>
-        <h2 className="text-3xl font-['PP_Museum'] font-normal text-gray-900 dark:text-white">Interactive Components</h2>
+        <h2 className="text-3xl font-museum font-normal text-gray-900 dark:text-white">Interactive Components</h2>
         <div className="h-px bg-gray-200 dark:bg-gray-800 flex-1 ml-4"></div>
       </div>
 
@@ -224,7 +224,7 @@ export function Interactive() {
                 <span className="bg-[#21e6c1] text-[#0f2537] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">New</span>
                 <span className="text-xs font-medium text-white/80">5 mins ago</span>
               </div>
-              <h4 className="font-['PP_Museum'] font-normal text-xl mb-2">Misty Forests</h4>
+              <h4 className="font-museum font-normal text-xl mb-2">Misty Forests</h4>
               <p className="text-sm text-[#d1d5dc]">Discover the secrets hidden within the ancient trees.</p>
              </div>
           </motion.div>
@@ -236,7 +236,7 @@ export function Interactive() {
             </div>
             <div className="p-4">
               <span className="inline-block bg-[#0f2537] text-[#ff9f29] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase mb-3">Nature</span>
-              <h4 className="font-['PP_Museum'] font-normal text-xl mb-3 text-[#101828] dark:text-white">Highland Peaks</h4>
+              <h4 className="font-museum font-normal text-xl mb-3 text-[#101828] dark:text-white">Highland Peaks</h4>
               <p className="text-sm text-[#6a7282] dark:text-gray-400 mb-4">Explore the rugged beauty of the highlands with our guided tours.</p>
               <a href="#" className="inline-flex items-center text-sm font-bold text-[#0f2537] dark:text-white hover:underline">
                 Read More <ArrowRight className="w-4 h-4 ml-1" />
@@ -248,7 +248,7 @@ export function Interactive() {
           <motion.div variants={item} className="bg-[#0f2537] rounded-[2rem] p-6 shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_15px_40px_rgba(0,0,0,0.15)] transition-all duration-300 flex flex-col h-[362px] justify-between">
             <div>
               <span className="inline-block border-2 border-[#cdef63] text-[#cdef63] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase mb-2">Info</span>
-              <h4 className="font-['PP_Museum'] font-normal text-xl mb-2 text-white">Standard Plan</h4>
+              <h4 className="font-museum font-normal text-xl mb-2 text-white">Standard Plan</h4>
               <p className="text-sm text-white">Get access to all basic features including health tracking and weekly reports.</p>
             </div>
             <button className="w-full bg-gradient-to-b from-[#cdef63] to-[#e8f5d6] text-[#0f2537] px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-105 transition-all shadow-sm hover:shadow-md active:scale-95">
@@ -260,7 +260,7 @@ export function Interactive() {
           <motion.div variants={item} className="bg-white dark:bg-gray-900 rounded-[2rem] p-6 border border-gray-100 dark:border-gray-800 shadow-[0px_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0px_15px_40px_rgba(0,0,0,0.15)] transition-all duration-300 flex flex-col h-[362px] justify-between">
             <div>
               <span className="inline-block border-2 border-[#ff9f29] text-[#ff9f29] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase mb-2">Info</span>
-              <h4 className="font-['PP_Museum'] font-normal text-xl mb-2 text-[#0f2537] dark:text-white">Standard Plan</h4>
+              <h4 className="font-museum font-normal text-xl mb-2 text-[#0f2537] dark:text-white">Standard Plan</h4>
               <p className="text-sm text-[#6a7282] dark:text-gray-400">Get access to all basic features including health tracking and weekly reports.</p>
             </div>
             <button className="w-full bg-[#ff9f29] text-[#0f2537] px-6 py-2.5 rounded-full font-bold text-sm hover:brightness-110 transition-all shadow-sm hover:shadow-md active:scale-95">

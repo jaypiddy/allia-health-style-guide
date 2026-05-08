@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Badge } from './ui/badge';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -15,6 +14,7 @@ export function Navigation({ currentTheme, onThemeChange }: NavigationProps) {
 
   const navLinks = [
     { href: "#colors", label: "Colors" },
+    { href: "#typography", label: "Typography" },
     { href: "#components", label: "Components" },
     { href: "#logos", label: "Logos" },
   ];
@@ -24,12 +24,9 @@ export function Navigation({ currentTheme, onThemeChange }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center gap-3">
-            <span className="font-bold text-xl tracking-tight text-[var(--color-text-main)] font-[Nunito]">
+            <span className="font-bold text-xl tracking-tight text-[var(--color-text-main)] font-nunito">
               Allia Health Group
             </span>
-            <Badge variant="outline" className="hidden border-gray-200 text-gray-500 font-normal bg-gray-50 sm:inline-flex">
-              Style Guide v2.0
-            </Badge>
           </div>
 
           {/* Desktop Navigation */}
@@ -39,7 +36,7 @@ export function Navigation({ currentTheme, onThemeChange }: NavigationProps) {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-gray-600 hover:text-[var(--color-secondary)] transition-colors font-[Rubik] font-[Nunito]"
+                  className="text-gray-600 hover:text-[var(--color-secondary)] transition-colors font-rubik font-nunito"
                 >
                   {link.label}
                 </a>
@@ -76,16 +73,11 @@ export function Navigation({ currentTheme, onThemeChange }: NavigationProps) {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block px-3 py-3 text-base font-medium text-gray-600 hover:text-[var(--color-secondary)] hover:bg-gray-50 rounded-md transition-colors font-[Rubik] font-[Nunito]"
+                  className="block px-3 py-3 text-base font-medium text-gray-600 hover:text-[var(--color-secondary)] hover:bg-gray-50 rounded-md transition-colors font-rubik font-nunito"
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="pt-4 px-3">
-                <Badge variant="outline" className="border-gray-200 text-gray-500 font-normal bg-gray-50 w-full justify-center py-1">
-                  Style Guide v2.0
-                </Badge>
-              </div>
             </div>
           </motion.div>
         )}

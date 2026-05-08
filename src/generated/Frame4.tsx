@@ -2,7 +2,7 @@ function Text() {
   return (
     <div className="relative shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative">
-        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">Oxygenated Mist</p>
+        <p className="font-bold font-sans font-bold leading-[24px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">Oxygenated Mist</p>
       </div>
     </div>
   );
@@ -11,7 +11,7 @@ function Text() {
 function Text1() {
   return (
     <div className="content-stretch flex items-center opacity-60 relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#1e2939] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#1e2939] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
     </div>
   );
 }
@@ -19,7 +19,7 @@ function Text1() {
 function Paragraph() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Paragraph">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[17.5px] not-italic relative shrink-0 text-[#1e2939] text-[14px] w-[235px]">Primary page background.</p>
+      <p className="font-medium font-sans font-medium leading-[17.5px] not-italic relative shrink-0 text-[#1e2939] text-[14px] w-[235px]">Primary page background.</p>
     </div>
   );
 }
@@ -36,7 +36,7 @@ function Container() {
 function Text2() {
   return (
     <div className="content-stretch flex h-[20.5px] items-start relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#F4F8FA</p>
+      <p className="font-medium font-sans font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#F4F8FA</p>
     </div>
   );
 }
@@ -78,7 +78,7 @@ function Colors1() {
   return (
     <div className="relative shrink-0" data-name="Colors">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative">
-        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] not-italic relative shrink-0 text-[#0f2537] text-[18px] text-nowrap tracking-[-0.45px] whitespace-pre">Laser Scalpel Teal</p>
+        <p className="font-bold font-sans font-bold leading-[24px] not-italic relative shrink-0 text-[#0f2537] text-[18px] text-nowrap tracking-[-0.45px] whitespace-pre">Laser Scalpel Teal</p>
       </div>
     </div>
   );
@@ -87,7 +87,7 @@ function Colors1() {
 function Text3() {
   return (
     <div className="content-stretch flex items-end opacity-60 relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#0f2537] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
     </div>
   );
 }
@@ -95,7 +95,7 @@ function Text3() {
 function Paragraph1() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#0f2537] text-[14px]">Primary buttons and icons</p>
+      <p className="basis-0 font-medium font-sans font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#0f2537] text-[14px]">Primary buttons and icons</p>
     </div>
   );
 }
@@ -113,7 +113,7 @@ function Text4() {
   return (
     <div className="h-[32px] relative shrink-0 w-[96.945px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[32px] relative w-[96.945px]">
-        <p className="absolute font-['Inter:Bold',sans-serif] font-bold leading-[32px] left-0 not-italic text-[#0f2537] text-[24px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#21E6C1</p>
+        <p className="absolute font-bold font-sans font-bold leading-[32px] left-0 not-italic text-[#0f2537] text-[24px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#21E6C1</p>
       </div>
     </div>
   );
@@ -160,7 +160,7 @@ function Text5() {
   return (
     <div className="relative shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative">
-        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] not-italic relative shrink-0 text-[#1e2939] text-[16px] text-nowrap whitespace-pre">Saline Solution</p>
+        <p className="font-bold font-sans font-bold leading-[24px] not-italic relative shrink-0 text-[#1e2939] text-[16px] text-nowrap whitespace-pre">Saline Solution</p>
       </div>
     </div>
   );
@@ -169,7 +169,7 @@ function Text5() {
 function Text6() {
   return (
     <div className="content-stretch flex items-center opacity-60 relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#1e2939] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#1e2939] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
     </div>
   );
 }
@@ -177,7 +177,7 @@ function Text6() {
 function Paragraph2() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background to highlight specific sections.</p>
+      <p className="basis-0 font-medium font-sans font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background to highlight specific sections.</p>
     </div>
   );
 }
@@ -194,7 +194,7 @@ function Container6() {
 function Text7() {
   return (
     <div className="content-stretch flex h-[20.5px] items-start relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#D0F5F0</p>
+      <p className="font-medium font-sans font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#D0F5F0</p>
     </div>
   );
 }
@@ -240,7 +240,7 @@ function Text8() {
   return (
     <div className="relative shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative">
-        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] not-italic relative shrink-0 text-[16px] text-nowrap text-white whitespace-pre">Deep Scrub Navy</p>
+        <p className="font-bold font-sans font-bold leading-[24px] not-italic relative shrink-0 text-[16px] text-nowrap text-white whitespace-pre">Deep Scrub Navy</p>
       </div>
     </div>
   );
@@ -249,7 +249,7 @@ function Text8() {
 function Text9() {
   return (
     <div className="h-[16px] opacity-60 relative shrink-0 w-full" data-name="Text">
-      <p className="absolute font-['Inter:Bold',sans-serif] font-bold leading-[16px] left-0 not-italic text-[12px] text-nowrap text-white top-[0.5px] uppercase whitespace-pre">Usage</p>
+      <p className="absolute font-bold font-sans font-bold leading-[16px] left-0 not-italic text-[12px] text-nowrap text-white top-[0.5px] uppercase whitespace-pre">Usage</p>
     </div>
   );
 }
@@ -257,7 +257,7 @@ function Text9() {
 function Paragraph3() {
   return (
     <div className="content-stretch flex h-[17.5px] items-start relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[14px] text-white">Hero section and footer</p>
+      <p className="basis-0 font-medium font-sans font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[14px] text-white">Hero section and footer</p>
     </div>
   );
 }
@@ -275,7 +275,7 @@ function Text10() {
   return (
     <div className="relative shrink-0" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative">
-        <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[18px] text-nowrap text-white whitespace-pre">#0F2537</p>
+        <p className="font-medium font-sans font-medium leading-[28px] not-italic relative shrink-0 text-[18px] text-nowrap text-white whitespace-pre">#0F2537</p>
       </div>
     </div>
   );
@@ -336,7 +336,7 @@ function Colors5() {
   return (
     <div className="relative shrink-0 w-full" data-name="Colors">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative w-full">
-        <p className="basis-0 font-['Inter:Bold',sans-serif] font-bold grow leading-[24px] min-h-px min-w-px not-italic relative shrink-0 text-[#422016] text-[18px] tracking-[-0.45px]">Vitamin C Burst</p>
+        <p className="basis-0 font-bold font-sans font-bold grow leading-[24px] min-h-px min-w-px not-italic relative shrink-0 text-[#422016] text-[18px] tracking-[-0.45px]">Vitamin C Burst</p>
       </div>
     </div>
   );
@@ -345,7 +345,7 @@ function Colors5() {
 function Text11() {
   return (
     <div className="content-stretch flex items-center opacity-60 relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#422016] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#422016] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
     </div>
   );
 }
@@ -353,7 +353,7 @@ function Text11() {
 function Paragraph4() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#422016] text-[14px]">Secondary buttons and icons</p>
+      <p className="basis-0 font-medium font-sans font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#422016] text-[14px]">Secondary buttons and icons</p>
     </div>
   );
 }
@@ -371,7 +371,7 @@ function Text12() {
   return (
     <div className="h-[32px] relative shrink-0 w-[96.945px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[32px] relative w-[96.945px]">
-        <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[28px] left-0 not-italic text-[#422016] text-[18px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#FF9F29</p>
+        <p className="absolute font-medium font-sans font-medium leading-[28px] left-0 not-italic text-[#422016] text-[18px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#FF9F29</p>
       </div>
     </div>
   );
@@ -418,7 +418,7 @@ function Text13() {
   return (
     <div className="relative shrink-0 w-full" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative w-full">
-        <p className="basis-0 font-['Inter:Bold',sans-serif] font-bold grow leading-[24px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[18px]">Epidermal Glow</p>
+        <p className="basis-0 font-bold font-sans font-bold grow leading-[24px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[18px]">Epidermal Glow</p>
       </div>
     </div>
   );
@@ -427,7 +427,7 @@ function Text13() {
 function Text14() {
   return (
     <div className="content-stretch flex items-center opacity-60 relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#1e2939] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#1e2939] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
     </div>
   );
 }
@@ -435,7 +435,7 @@ function Text14() {
 function Paragraph5() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background to highlight specific sections</p>
+      <p className="basis-0 font-medium font-sans font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background to highlight specific sections</p>
     </div>
   );
 }
@@ -452,7 +452,7 @@ function Container15() {
 function Text15() {
   return (
     <div className="content-stretch flex h-[20.5px] items-start relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#FFE8D1</p>
+      <p className="font-medium font-sans font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#FFE8D1</p>
     </div>
   );
 }
@@ -498,7 +498,7 @@ function Colors8() {
   return (
     <div className="relative shrink-0 w-full" data-name="Colors">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative w-full">
-        <p className="basis-0 font-['Inter:Bold',sans-serif] font-bold grow leading-[24px] min-h-px min-w-px not-italic relative shrink-0 text-[#132a26] text-[18px] tracking-[-0.45px]">Bio-Lumen Lime</p>
+        <p className="basis-0 font-bold font-sans font-bold grow leading-[24px] min-h-px min-w-px not-italic relative shrink-0 text-[#132a26] text-[18px] tracking-[-0.45px]">Bio-Lumen Lime</p>
       </div>
     </div>
   );
@@ -507,7 +507,7 @@ function Colors8() {
 function Text16() {
   return (
     <div className="content-stretch flex items-center opacity-60 relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#132a26] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#132a26] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
     </div>
   );
 }
@@ -515,7 +515,7 @@ function Text16() {
 function Paragraph6() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#422016] text-[14px]">Secondary buttons and icons</p>
+      <p className="basis-0 font-medium font-sans font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#422016] text-[14px]">Secondary buttons and icons</p>
     </div>
   );
 }
@@ -533,7 +533,7 @@ function Text17() {
   return (
     <div className="h-[32px] relative shrink-0 w-[96.945px]" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid h-[32px] relative w-[96.945px]">
-        <p className="absolute font-['Inter:Medium',sans-serif] font-medium leading-[28px] left-0 not-italic text-[#132a26] text-[18px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#CDEF63</p>
+        <p className="absolute font-medium font-sans font-medium leading-[28px] left-0 not-italic text-[#132a26] text-[18px] text-nowrap top-0 tracking-[-0.6px] whitespace-pre">#CDEF63</p>
       </div>
     </div>
   );
@@ -580,7 +580,7 @@ function Text18() {
   return (
     <div className="relative shrink-0 w-full" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center relative w-full">
-        <p className="basis-0 font-['Inter:Bold',sans-serif] font-bold grow leading-[24px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[18px]">Aloe Vera Soothe</p>
+        <p className="basis-0 font-bold font-sans font-bold grow leading-[24px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[18px]">Aloe Vera Soothe</p>
       </div>
     </div>
   );
@@ -589,7 +589,7 @@ function Text18() {
 function Text19() {
   return (
     <div className="content-stretch flex items-center opacity-60 relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[16px] not-italic relative shrink-0 text-[#1e2939] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
+      <p className="font-bold font-sans font-bold leading-[16px] not-italic relative shrink-0 text-[#1e2939] text-[12px] text-nowrap uppercase whitespace-pre">Usage</p>
     </div>
   );
 }
@@ -597,7 +597,7 @@ function Text19() {
 function Paragraph7() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Paragraph">
-      <p className="basis-0 font-['Inter:Medium',sans-serif] font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background to highlight specific sections</p>
+      <p className="basis-0 font-medium font-sans font-medium grow leading-[17.5px] min-h-px min-w-px not-italic relative shrink-0 text-[#1e2939] text-[14px]">Secondary background to highlight specific sections</p>
     </div>
   );
 }
@@ -614,7 +614,7 @@ function Container21() {
 function Text20() {
   return (
     <div className="content-stretch flex h-[20.5px] items-start relative shrink-0 w-full" data-name="Text">
-      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#E8F5D6</p>
+      <p className="font-medium font-sans font-medium leading-[28px] not-italic relative shrink-0 text-[#1e2939] text-[18px] text-nowrap whitespace-pre">#E8F5D6</p>
     </div>
   );
 }

@@ -62,13 +62,13 @@ export function Hero() {
             Allia Health Group
           </motion.span>
           <motion.h1
-            className="text-4xl md:text-6xl font-['PP_Museum'] font-normal leading-tight mb-6"
+            className="text-4xl md:text-6xl font-museum font-normal leading-tight mb-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
           >
             Bold, Natural, <br />
-            <span className="bg-gradient-to-br from-[#21e6c1] to-[#45f0d5] bg-clip-text text-transparent font-[PP_Museum] font-normal">Accessible.</span>
+            <span className="bg-gradient-to-br from-[#21e6c1] to-[#45f0d5] bg-clip-text text-transparent font-museum font-normal">Accessible.</span>
           </motion.h1>
           <motion.p
             className="text-lg text-[#d1d5dc] leading-relaxed mb-8 max-w-md"
